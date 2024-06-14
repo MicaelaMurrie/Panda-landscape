@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+    background: linear-gradient(45deg, rgb(68, 196, 255), rgb(238, 253, 255));
     margin: 0;
     padding: 0;
     width: 100%;
@@ -9,10 +9,10 @@ body {
 
 
 .panda {
-    width: 300px;
-    height: 300px;
+    width: 18.6rem;
+    height: 18.6rem;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 6rem;
     position: relative;
     transition: transform 1s ease-in-out 0ms;
 }
@@ -127,24 +127,24 @@ body {
 }
 
 .mouth div {
-    width: 26px;
-    height: 53px;
-    border: 2px solid #000;
-    border-radius: 190%/190px 150px 0 0;
+    width: 1.4rem;
+    height: 2.5rem;
+    border: 2px solid #874b4b;
+    border-radius: 190%/5rem 5rem 0 0;
     border-color: rgb(30, 29, 29) transparent transparent transparent;
 }
 
 .mouth-line-left {
     position: absolute;
-    top: 26px;
-    left: 36px;
+    top: 2.3rem;
+    left: 2.43rem;
     transform: rotate(170deg);
 }
 
 .mouth-line-right {
     position: absolute;
-    top: 26px;
-    left: 58px;
+    top: 2.3rem;
+    left: 3.6rem;
     transform: rotate(-170deg);
 }
 
