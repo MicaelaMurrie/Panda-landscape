@@ -1,0 +1,234 @@
+body {
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.panda {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 75px;
+    position: relative;
+    transition: transform 1s ease-in-out 0ms;
+}
+
+.panda * {
+    position: absolute;
+}
+
+.panda:active {
+    transform: scale(1.5);
+    cursor: not-allowed;
+}
+
+.panda-head {
+    width: 42%;
+    height: 34%;
+    background: linear-gradient(45deg,
+            rgb(194, 194, 194) 0%,
+            rgb(234, 231, 231) 25%,
+            white 67%);
+    border-radius: 70% 70% 65% 65%;
+    top: 17%;
+    left: 31%;
+    transform: rotate(14deg);
+    z-index: 1;
+}
+
+.ear {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    background: linear-gradient(750deg, rgb(38, 38, 38), rgb(73, 73, 73));
+
+    border-radius: 48%;
+    z-index: -1;
+}
+
+.ear.left {
+    top: 12%;
+    left: 30%;
+
+}
+
+.ear.right {
+    top: 22%;
+    right: 21%;
+
+}
+
+.eye {
+    width: 22%;
+    height: 35%;
+    background: linear-gradient(90deg, rgb(13, 13, 13), rgb(50, 50, 50));
+    top: 38%;
+    border-radius: 50%;
+}
+
+.eye.left {
+    left: 15%;
+    transform: rotate(25deg);
+}
+
+.eye.right {
+    right: 15%;
+    transform: rotate(-25deg);
+}
+
+.eye-lid {
+    width: 15%;
+    height: 16%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.eye-lid.left {
+    right: 21%;
+    top: 30%;
+}
+
+.eye-lid.right {
+    left: 21%;
+    top: 30%;
+}
+
+.blush {
+    width: 22%;
+    height: 20%;
+    background-color: pink;
+    top: 60%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blush.left {
+    left: 10%;
+    transform: rotate(15deg);
+}
+
+.blush.right {
+    right: 10%;
+    transform: rotate(-15deg);
+}
+
+.nose {
+    height: 5%;
+    background-color: black;
+    border-radius: 50%;
+    width: 9%;
+    top: 67%;
+    left: 45%;
+    border-radius: 20% 20% 70% 70%;
+}
+
+.mouth div {
+    width: 26px;
+    height: 53px;
+    border: 2px solid #000;
+    border-radius: 190%/190px 150px 0 0;
+    border-color: rgb(30, 29, 29) transparent transparent transparent;
+}
+
+.mouth-line-left {
+    position: absolute;
+    top: 26px;
+    left: 36px;
+    transform: rotate(170deg);
+}
+
+.mouth-line-right {
+    position: absolute;
+    top: 26px;
+    left: 58px;
+    transform: rotate(-170deg);
+}
+
+.panda-body {
+    width: 33%;
+    height: 37%;
+    background: linear-gradient(45deg,
+            rgb(184, 184, 184) 0%,
+            rgb(234, 231, 231) 25%,
+            white 67%);
+    border-radius: 90% 90% 80% 80%;
+    top: 40%;
+    left: 31%;
+}
+
+.panda-body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(90deg, black, rgb(73, 73, 73));
+    top: 6%;
+    border-radius: 100% 70% 10% 40%;
+    transform: rotate(5deg);
+}
+
+.arm {
+    width: 35%;
+    height: 62%;
+    border-radius: 40% 10% 90% 120%;
+    z-index: 0;
+}
+
+.arm.left {
+    top: 45%;
+    left: 4%;
+    background: linear-gradient(160deg, rgb(16, 16, 16), rgb(68, 68, 68));
+    transform-origin: top left;
+    transform: rotate(132deg) scaleX(-1);
+    animation: 2s linear infinite wave;
+    z-index: 1;
+}
+
+.arm.right {
+    top: 28%;
+    right: -18%;
+    background: linear-gradient(20deg, rgb(16, 16, 16), rgb(68, 68, 68));
+    transform: rotate(-25deg);
+
+}
+
+@keyframes wave {
+    20% {
+        transform: rotate(132deg) scaleX(-1);
+    }
+
+    40% {
+        transform: rotate(142deg) scaleX(-1);
+    }
+
+    60% {
+        transform: rotate(132deg) scaleX(-1);
+    }
+
+    80% {
+        transform: rotate(142deg) scaleX(-1);
+    }
+}
+
+.foot {
+    width: 40%;
+    height: 65%;
+    background: linear-gradient(90deg, rgb(13, 13, 13), rgb(73, 73, 73));
+    top: 55%;
+    border-radius: 48%;
+    z-index: -1;
+}
+
+.foot.left {
+    left: 3%;
+    transform: rotate(-10deg);
+}
+
+.foot.right {
+    right: 3%;
+    transform: rotate(10deg);
+}
